@@ -1,0 +1,209 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "GraphQL/7.4.1": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL-Parser": "8.3.0"
+        },
+        "compile": {
+          "lib/net6.0/GraphQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/GraphQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GraphQL-Parser/8.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/GraphQLParser.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/GraphQLParser.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GraphQL.SystemTextJson/7.4.1": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL": "[7.4.1, 8.0.0)"
+        },
+        "compile": {
+          "lib/net6.0/GraphQL.SystemTextJson.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/GraphQL.SystemTextJson.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GraphqlDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "GraphQL": "7.4.1",
+          "GraphQL.SystemTextJson": "7.4.1"
+        },
+        "compile": {
+          "bin/placeholder/GraphqlDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GraphqlDomain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GraphQL/7.4.1": {
+      "sha512": "Im+zvT641588dU+yCTXBg9xVUAlxWCgc4VPRa5DHDbfnbXzlOGlB+3RfNvhqsDXfmebuVtAHHi1pP4BmCZ+CZg==",
+      "type": "package",
+      "path": "graphql/7.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "graphql.7.4.1.nupkg.sha512",
+        "graphql.nuspec",
+        "lib/net5.0/GraphQL.dll",
+        "lib/net5.0/GraphQL.xml",
+        "lib/net6.0/GraphQL.dll",
+        "lib/net6.0/GraphQL.xml",
+        "lib/netstandard2.0/GraphQL.dll",
+        "lib/netstandard2.0/GraphQL.xml",
+        "lib/netstandard2.1/GraphQL.dll",
+        "lib/netstandard2.1/GraphQL.xml",
+        "logo.64x64.png"
+      ]
+    },
+    "GraphQL-Parser/8.3.0": {
+      "sha512": "rOZPnSQrfMWNri/UnXfG2xdJLGhjn4UlSHFLbsBKsL2rOvJQbyzgIcwTPkQzEPOI0Xy8bZpGK6H2yHkHs+kmHw==",
+      "type": "package",
+      "path": "graphql-parser/8.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "graphql-parser.8.3.0.nupkg.sha512",
+        "graphql-parser.nuspec",
+        "lib/net6.0/GraphQLParser.dll",
+        "lib/net6.0/GraphQLParser.xml",
+        "lib/netstandard2.0/GraphQLParser.dll",
+        "lib/netstandard2.0/GraphQLParser.xml",
+        "lib/netstandard2.1/GraphQLParser.dll",
+        "lib/netstandard2.1/GraphQLParser.xml",
+        "logo.64x64.png"
+      ]
+    },
+    "GraphQL.SystemTextJson/7.4.1": {
+      "sha512": "YbQs4SuXsJrQEVjJwAKObgKEAKT52faW68dmWB33TsawtT8gXzOTT8jSnA6P3cJ85NOJELORQZ5bVc4Cc9ShBA==",
+      "type": "package",
+      "path": "graphql.systemtextjson/7.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "graphql.systemtextjson.7.4.1.nupkg.sha512",
+        "graphql.systemtextjson.nuspec",
+        "lib/net5.0/GraphQL.SystemTextJson.dll",
+        "lib/net5.0/GraphQL.SystemTextJson.xml",
+        "lib/net6.0/GraphQL.SystemTextJson.dll",
+        "lib/net6.0/GraphQL.SystemTextJson.xml",
+        "lib/netcoreapp3.1/GraphQL.SystemTextJson.dll",
+        "lib/netcoreapp3.1/GraphQL.SystemTextJson.xml",
+        "lib/netstandard2.0/GraphQL.SystemTextJson.dll",
+        "lib/netstandard2.0/GraphQL.SystemTextJson.xml",
+        "lib/netstandard2.1/GraphQL.SystemTextJson.dll",
+        "lib/netstandard2.1/GraphQL.SystemTextJson.xml",
+        "logo.64x64.png"
+      ]
+    },
+    "GraphqlDomain/1.0.0": {
+      "type": "project",
+      "path": "../GraphqlDomain/GraphqlDomain.csproj",
+      "msbuildProject": "../GraphqlDomain/GraphqlDomain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "GraphqlDomain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\rafca\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\rafca\\OneDrive\\Desktop\\Graphql-TestMind\\GraphqlBusiness\\GraphqlBusiness.csproj",
+      "projectName": "GraphqlBusiness",
+      "projectPath": "C:\\Users\\rafca\\OneDrive\\Desktop\\Graphql-TestMind\\GraphqlBusiness\\GraphqlBusiness.csproj",
+      "packagesPath": "C:\\Users\\rafca\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rafca\\OneDrive\\Desktop\\Graphql-TestMind\\GraphqlBusiness\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\rafca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\rafca\\OneDrive\\Desktop\\Graphql-TestMind\\GraphqlDomain\\GraphqlDomain.csproj": {
+              "projectPath": "C:\\Users\\rafca\\OneDrive\\Desktop\\Graphql-TestMind\\GraphqlDomain\\GraphqlDomain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

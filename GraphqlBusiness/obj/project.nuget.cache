@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "YZ0cN7VsAa35Iu8aOK+Om9l7SXdhdT9fKfvylfl0GbaZyFm0V8+xMrNw/22w6uH8bg1SQYZWq108V1U7t+y/Qg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rafca\\OneDrive\\Desktop\\Graphql-TestMind\\GraphqlBusiness\\GraphqlBusiness.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rafca\\.nuget\\packages\\graphql\\7.4.1\\graphql.7.4.1.nupkg.sha512",
+    "C:\\Users\\rafca\\.nuget\\packages\\graphql-parser\\8.3.0\\graphql-parser.8.3.0.nupkg.sha512",
+    "C:\\Users\\rafca\\.nuget\\packages\\graphql.systemtextjson\\7.4.1\\graphql.systemtextjson.7.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}

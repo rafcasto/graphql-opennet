@@ -1,0 +1,91 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GraphqlBusiness/1.0.0": {
+        "dependencies": {
+          "GraphqlDomain": "1.0.0"
+        },
+        "runtime": {
+          "GraphqlBusiness.dll": {}
+        }
+      },
+      "GraphQL/7.4.1": {
+        "dependencies": {
+          "GraphQL-Parser": "8.3.0"
+        },
+        "runtime": {
+          "lib/net6.0/GraphQL.dll": {
+            "assemblyVersion": "7.4.1.0",
+            "fileVersion": "7.4.1.0"
+          }
+        }
+      },
+      "GraphQL-Parser/8.3.0": {
+        "runtime": {
+          "lib/net6.0/GraphQLParser.dll": {
+            "assemblyVersion": "8.3.0.0",
+            "fileVersion": "8.3.0.0"
+          }
+        }
+      },
+      "GraphQL.SystemTextJson/7.4.1": {
+        "dependencies": {
+          "GraphQL": "7.4.1"
+        },
+        "runtime": {
+          "lib/net6.0/GraphQL.SystemTextJson.dll": {
+            "assemblyVersion": "7.4.1.0",
+            "fileVersion": "7.4.1.0"
+          }
+        }
+      },
+      "GraphqlDomain/1.0.0": {
+        "dependencies": {
+          "GraphQL": "7.4.1",
+          "GraphQL.SystemTextJson": "7.4.1"
+        },
+        "runtime": {
+          "GraphqlDomain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GraphqlBusiness/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GraphQL/7.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Im+zvT641588dU+yCTXBg9xVUAlxWCgc4VPRa5DHDbfnbXzlOGlB+3RfNvhqsDXfmebuVtAHHi1pP4BmCZ+CZg==",
+      "path": "graphql/7.4.1",
+      "hashPath": "graphql.7.4.1.nupkg.sha512"
+    },
+    "GraphQL-Parser/8.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rOZPnSQrfMWNri/UnXfG2xdJLGhjn4UlSHFLbsBKsL2rOvJQbyzgIcwTPkQzEPOI0Xy8bZpGK6H2yHkHs+kmHw==",
+      "path": "graphql-parser/8.3.0",
+      "hashPath": "graphql-parser.8.3.0.nupkg.sha512"
+    },
+    "GraphQL.SystemTextJson/7.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YbQs4SuXsJrQEVjJwAKObgKEAKT52faW68dmWB33TsawtT8gXzOTT8jSnA6P3cJ85NOJELORQZ5bVc4Cc9ShBA==",
+      "path": "graphql.systemtextjson/7.4.1",
+      "hashPath": "graphql.systemtextjson.7.4.1.nupkg.sha512"
+    },
+    "GraphqlDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
