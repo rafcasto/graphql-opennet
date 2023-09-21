@@ -10,3 +10,15 @@ C:\Users\rafca\OneDrive\Desktop\Graphql-TestMind\GraphqlDomain\obj\Debug\net6.0\
 C:\Users\rafca\OneDrive\Desktop\Graphql-TestMind\GraphqlDomain\obj\Debug\net6.0\refint\GraphqlDomain.dll
 C:\Users\rafca\OneDrive\Desktop\Graphql-TestMind\GraphqlDomain\obj\Debug\net6.0\GraphqlDomain.pdb
 C:\Users\rafca\OneDrive\Desktop\Graphql-TestMind\GraphqlDomain\obj\Debug\net6.0\ref\GraphqlDomain.dll
+C:\Users\ante_\graphql-opennet\GraphqlDomain\bin\Debug\net6.0\GraphqlDomain.deps.json
+C:\Users\ante_\graphql-opennet\GraphqlDomain\bin\Debug\net6.0\GraphqlDomain.dll
+C:\Users\ante_\graphql-opennet\GraphqlDomain\bin\Debug\net6.0\GraphqlDomain.pdb
+C:\Users\ante_\graphql-opennet\GraphqlDomain\obj\Debug\net6.0\GraphqlDomain.csproj.AssemblyReference.cache
+C:\Users\ante_\graphql-opennet\GraphqlDomain\obj\Debug\net6.0\GraphqlDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ante_\graphql-opennet\GraphqlDomain\obj\Debug\net6.0\GraphqlDomain.AssemblyInfoInputs.cache
+C:\Users\ante_\graphql-opennet\GraphqlDomain\obj\Debug\net6.0\GraphqlDomain.AssemblyInfo.cs
+C:\Users\ante_\graphql-opennet\GraphqlDomain\obj\Debug\net6.0\GraphqlDomain.csproj.CoreCompileInputs.cache
+C:\Users\ante_\graphql-opennet\GraphqlDomain\obj\Debug\net6.0\GraphqlDomain.dll
+C:\Users\ante_\graphql-opennet\GraphqlDomain\obj\Debug\net6.0\refint\GraphqlDomain.dll
+C:\Users\ante_\graphql-opennet\GraphqlDomain\obj\Debug\net6.0\GraphqlDomain.pdb
+C:\Users\ante_\graphql-opennet\GraphqlDomain\obj\Debug\net6.0\ref\GraphqlDomain.dll

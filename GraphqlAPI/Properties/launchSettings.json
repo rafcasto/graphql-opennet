@@ -1,13 +1,12 @@
-﻿{
+{
   "profiles": {
     "Playground": {
       "commandName": "Project",
-      "launchBrowser": false,
       "launchUrl": "ui/playground",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:62248/"
+      "applicationUrl": "http://localhost:5000/"
     },
     "GraphiQL": {
       "commandName": "Project",
@@ -16,7 +15,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:62248/"
+      "applicationUrl": "http://localhost:5000/"
     }
   }
 }

@@ -8,7 +8,9 @@ using GraphQL.Validation.Complexity;
 using GraphqlAPI.Operations;
 using GraphqlAPI.Schemas;
 using GraphqlBusiness.Repository;
+using GraphqlBusiness.Repository.ePortal;
 using GraphqlDomain.Contract;
+using GraphqlDomain.Contract.ePortal;
 using Microsoft.Extensions.Options;
 using System.Reflection.Metadata.Ecma335;
 
@@ -53,6 +55,7 @@ namespace GraphqlAPI
             services.AddHttpContextAccessor();
             services.AddSingleton<IUserRepository,UserRepository>();
             services.AddSingleton<IIRDRepository, IRDRepository>();
+            services.AddSingleton<INotificationsRepository, NotificationsRepository>();
             services.AddSingleton<QueryOpenNet>();
             services.AddSingleton<MutationOpenNet>();
             services.AddSingleton<GraphQLMiddleware>();
