@@ -8,10 +8,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
     ports:
-      - "5432:5432"
-    volumes:
-      - ./db_files:/var/lib/postgresql/data
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - "5431:5432"   
 
   eportal-data-service:
     image: rafcasto/eportal-data-service      
@@ -20,5 +17,3 @@ services:
       - "5000:5000"
     depends_on:
       - postgres    
-volumes:
-  postgres_data:
