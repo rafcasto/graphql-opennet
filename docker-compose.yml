@@ -14,8 +14,7 @@ services:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
   eportal-data-service:
-    build:
-      image: rafcasto/eportal-data-service      
+    image: rafcasto/eportal-data-service      
     container_name: eportal_data_service        
     ports:
       - "5000:5000"
