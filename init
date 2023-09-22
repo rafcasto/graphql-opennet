@@ -1,0 +1,14 @@
+DROP SEQUENCE IF EXISTS tabmessagetemplate_messagetemplateid_seq;
+CREATE SEQUENCE tabmessagetemplate_messagetemplateid_seq INCREMENT BY 1 MINVALUE 1 MAXVALUE 9223372036854775807 START WITH 1 CACHE 20 NO CYCLE;
+DROP SEQUENCE IF EXISTS tabnotification_notificationid_seq;
+CREATE SEQUENCE tabnotification_notificationid_seq INCREMENT BY 1 MINVALUE 1 MAXVALUE 9223372036854775807 START WITH 1 CACHE 20 NO CYCLE;
+DROP SEQUENCE IF EXISTS tabnotificationtype_notificationtypeid_seq;
+CREATE SEQUENCE tabnotificationtype_notificationtypeid_seq INCREMENT BY 1 MINVALUE 1 MAXVALUE 9223372036854775807 START WITH 1 CACHE 20 NO CYCLE;
+DROP TABLE IF EXISTS tabmessagetemplate;
+CREATE TABLE tabmessagetemplate (messagetemplateid SERIAL NOT NULL, applicationid INTEGER NOT NULL, notificationtypeid INTEGER NOT NULL, languagecode CHARACTER VARYING(2) DEFAULT 'DE'::character varying NOT NULL, sender CHARACTER VARYING(200) DEFAULT ''::character varying NOT NULL, subject CHARACTER VARYING(400) DEFAULT ''::character varying, body CHARACTER VARYING(4000) DEFAULT ''::character varying NOT NULL, CONSTRAINT pk_tabmessagetemplate PRIMARY KEY (messagetemplateid));
+DROP TABLE IF EXISTS tabnotification;
+CREATE TABLE tabnotification (notificationid SERIAL NOT NULL, messagetemplateid INTEGER NOT NULL, receiver CHARACTER VARYING(200) NOT NULL, createdate TIMESTAMP(6) WITHOUT TIME ZONE NOT NULL, createuser CHARACTER VARYING(255) DEFAULT ''::character varying NOT NULL, senddate TIMESTAMP(6) WITHOUT TIME ZONE, CONSTRAINT pk_tabnotification PRIMARY KEY (notificationid));
+DROP TABLE IF EXISTS tabnotificationtype;
+CREATE TABLE tabnotificationtype (notificationtypeid SERIAL NOT NULL, notificationtype CHARACTER VARYING(255) DEFAULT ''::character varying NOT NULL, issms BOOLEAN DEFAULT false NOT NULL, CONSTRAINT pk_tabnotificationtype PRIMARY KEY (notificationtypeid));
+ALTER TABLE "tabmessagetemplate" ADD CONSTRAINT fk_tabmessagetemplate_tabnotificationtype1 FOREIGN KEY ("notificationtypeid") REFERENCES "tabnotificationtype" ("notificationtypeid");
+ALTER TABLE "tabnotification" ADD CONSTRAINT fk_tabnotification_tabmessagetemplate1 FOREIGN KEY ("messagetemplateid") REFERENCES "tabmessagetemplate" ("messagetemplateid");
