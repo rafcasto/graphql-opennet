@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:13 # Use the PostgreSQL version you prefer
+    container_name: postgresdb
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db_files:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  eportal-data-service:
+    build:
+      image: rafcasto/eportal-data-service      
+    container_name: eportal_data_service        
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres    
+volumes:
+  postgres_data:
