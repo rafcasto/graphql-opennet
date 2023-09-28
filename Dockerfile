@@ -9,4 +9,4 @@ COPY ./bin/Release/net7.0/publish /app
 EXPOSE 5000
 # Define the entry point for your application
 
-CMD ["dotnet","GraphqlAPI.dll","--environment=Development"]
+CMD ["dotnet","GraphqlAPI.dll"]
