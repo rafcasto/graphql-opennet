@@ -12,7 +12,7 @@ public class Program
     public static IWebHost BuildWebHost(string[] args)
     {
         return WebHost.CreateDefaultBuilder(args)
-            .UseStartup<Startup>()
+            .UseStartup<Startup>().UseUrls("http://0.0.0.0:5000")
             .Build();
     }
 
